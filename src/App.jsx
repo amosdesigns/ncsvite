@@ -1,7 +1,16 @@
-import './App.css'
+import Header from './components/HeaderComponent';
+import Footer from './components/FooterComponent';
+import './App.css';
 
 function App() {
-  return <div className="App">hello nucamp!</div>;
+  const text = `I'm ready for workshop!`;
+  return (
+    <div className="App">
+      <Header />
+      <p>{ text }</p>
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;
