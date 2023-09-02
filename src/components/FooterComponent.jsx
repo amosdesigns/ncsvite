@@ -5,7 +5,7 @@ const Footer = () => {
   const setYearStatement = YDate === 2023 ? YDate : `2023 - ${YDate}`;
   return (
     <footer>
-      <Container>&copy; {setYearStatement} Jerome Amos</Container>
+      <Container>&copy;{setYearStatement} Jerome Amos</Container>
      </footer>
   );
 };
