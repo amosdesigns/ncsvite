@@ -1,15 +1,27 @@
 import { Container } from 'reactstrap';
+import CampsiteList  from './features/CampsiteList';
 import Header from './components/HeaderComponent';
 import Footer from './components/FooterComponent';
 import './App.css';
 
 function App() {
-  const text = `I'm ready for workshop!`;
+ 
   return (
     <div className="App">
       <Header />
       <Container>
-        <p>{text}</p>
+      <CampsiteList/>
+        {/* {CAMPSITES &&
+          CAMPSITES.map(({ id, name, image, featured, elevation, description }) => (
+            <CampsiteCard
+              key={id}
+              name={name}
+              image={image}
+              featured={featured}
+              elevation={elevation}
+              description={description}
+            />
+          ))} */}
       </Container>
       <Footer />
     </div>
