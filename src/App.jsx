@@ -10,18 +10,7 @@ function App() {
     <div className="App">
       <Header />
       <Container>
-      <CampsiteList/>
-        {/* {CAMPSITES &&
-          CAMPSITES.map(({ id, name, image, featured, elevation, description }) => (
-            <CampsiteCard
-              key={id}
-              name={name}
-              image={image}
-              featured={featured}
-              elevation={elevation}
-              description={description}
-            />
-          ))} */}
+        <CampsiteList/>
       </Container>
       <Footer />
     </div>
