@@ -26,7 +26,6 @@ a[href^="mailto:"]::before{
   margin-right: 0.5rem;
   display: inline-block;
   position: relative;
-  
   left:0px;
   top:0px;
 }

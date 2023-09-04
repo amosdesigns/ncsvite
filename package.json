@@ -9,7 +9,7 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "lint:fix": "eslint --fix",
-     "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
+    "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
   },
   "dependencies": {
     "@react-three/fiber": "^8.13.7",
@@ -25,6 +25,7 @@
     "react-router-dom": "^6.2.1",
     "react-spring": "^9.7.2",
     "reactstrap": "^9.0.1",
+    "redux": "^4.2.1",
     "redux-logger": "^3.0.6",
     "typeface-lobster": "^1.1.13",
     "typeface-open-sans": "^1.1.13"
