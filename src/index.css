@@ -1,14 +1,32 @@
-body {
+:root {
   font-family: 'Open Sans', sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
 }
-
-h1,
-h2,
-h3,
-.card-body > .card-title {
-  font-family: 'Lobster', cursive;
+a[href^="tel:"] {
+  font-weight: bold;
+  color: #09169c;
+  text-decoration: none;
 }
-
-h2 {
-  color: #3046c5;
+a[href^="tel:"]::before{
+  content: "📞";
+  margin-right: 0.5rem;
+  display: inline-block;
+}
+a[href^="mailto:"] {
+  text-decoration: none;
+  font-size:12px;
+  color: #09169c;
+}
+a[href^="mailto:"]::before{
+  content: "✉️";
+  margin-right: 0.5rem;
+  display: inline-block;
+  position: relative;
+  
+  left:0px;
+  top:0px;
 }
