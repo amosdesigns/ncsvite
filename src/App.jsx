@@ -1,5 +1,5 @@
 import { Container } from 'reactstrap';
-import CampsiteList  from './features/CampsiteList';
+import CampsitesDirectoryPage from './pages/CampsitesDirectoryPage';
 import Header from './components/HeaderComponent';
 import Footer from './components/FooterComponent';
 import './App.css';
@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <Header />
       <Container>
-        <CampsiteList/>
+        <CampsitesDirectoryPage />
       </Container>
       <Footer />
     </div>
