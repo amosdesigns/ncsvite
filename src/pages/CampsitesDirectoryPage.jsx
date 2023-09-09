@@ -1,5 +1,5 @@
 import { Container, Row, Col, Button } from 'reactstrap';
-import  CampsiteDetail  from '../features/campsites/CampsiteDetail';
+import CampsiteDetail from '../features/campsites/CampsiteDetail';
 import CampsitesList from '../features/CampsiteList';
 import { selectRandomCampsite } from '../features/campsites/campsitesSlice';
 
