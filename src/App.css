@@ -2,11 +2,14 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-h1,
+h1{ font-family: 'Bungee Spice', cursive;}
 h2,
 h3,
 .card-body > .card-title {
     font-family: 'Lobster', cursive;
+    /* font-family: 'Abril Fatface', cursive;
+font-family: 'Bungee Spice', cursive;
+font-family: 'Ubuntu Condensed', sans-serif; */
 }
 
 .card-title {
