@@ -5,11 +5,10 @@ import Footer from './components/FooterComponent';
 import './App.css';
 
 function App() {
- 
   return (
     <div className="App">
       <Header />
-      <Container>
+      <Container className="main">
         <CampsitesDirectoryPage />
       </Container>
       <Footer />

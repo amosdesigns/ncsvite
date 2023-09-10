@@ -17,6 +17,14 @@ h3,
 h2 {
     color: #3046c5;
 }
+.main {
+  padding-bottom: 30%;
+  background-image: url('../src/app/assets/img/camping-place.gif');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+
+}
 
 .card-img-overlay .card-title {
     color: white;
@@ -73,7 +81,7 @@ h2 {
 .page-exit-active {
     opacity: 0;
     transition: 300ms ease-in;
-=======
+}
 .card-img-overlay .card-title {
   color: white;
   background-color: rgba(0, 0, 0, 0.5);
