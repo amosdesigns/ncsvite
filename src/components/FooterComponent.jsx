@@ -1,4 +1,5 @@
-import { Container,Row, Col } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const YDate = new Date().getFullYear();
@@ -7,8 +8,22 @@ const Footer = () => {
     <footer className="site-footer">
       <Container>
         <Row>
-          <Col>
-            <small>This will be the site navigation!</small>
+          <Col xs={{ size: 4, offset: 1 }} sm="2">
+            <h5>Links</h5>
+            <ul className="list-unstyled">
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/directory">Directory</Link>
+              </li>
+              <li>
+                <Link to="/about">About</Link>
+              </li>
+              <li>
+                <Link to="/contact">Contact</Link>
+              </li>
+            </ul>
             <p>
               <small>&copy;{setYearStatement} Jerome Amos</small>
             </p>
