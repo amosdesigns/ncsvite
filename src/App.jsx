@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import ContactPage from './pages/ContactPage';
+import AboutPage from './pages/AboutPage';
 import HomePage from './pages/HomePage';
 import { Container } from 'reactstrap';
 import CampsitesDirectoryPage from './pages/CampsitesDirectoryPage';
@@ -15,7 +16,7 @@ function App() {
       <Container className="main">
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/directory" element={<CampsitesDirectoryPage />} />
           <Route
