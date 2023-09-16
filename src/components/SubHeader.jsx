@@ -8,9 +8,11 @@ const SubHeader = ({ current, detail }) => {
       <Row>
         <Col>
           <Breadcrumb>
-            <BreadcrumbItem>
-              <Link to="/">Home</Link>
-            </BreadcrumbItem>
+            {current !== 'Home' && (
+              <BreadcrumbItem>
+                <Link to="/">Home</Link>
+              </BreadcrumbItem>
+            )}
 
             {detail && (
               <BreadcrumbItem>
