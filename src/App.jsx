@@ -22,7 +22,7 @@ function App() {
           <Route
             path="/directory/:campsiteId"
             element={<CampsiteDetailPage />}
-            />
+          />
         </Routes>
       </Container>
       <Footer />

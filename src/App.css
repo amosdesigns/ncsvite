@@ -140,3 +140,6 @@ h2 {
   opacity: 0;
   transition: 300ms ease-in;
 }
+.aboutPg{
+  background: rgba(255, 255, 255, .45);
+}
