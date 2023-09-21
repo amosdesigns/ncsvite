@@ -1,12 +1,14 @@
-import React from 'react'
+/* eslint-disable react/jsx-no-undef */
 import { Button, Label, Col, FormGroup } from 'reactstrap'
-import { Formik, Field, Form } from 'formik'
+import { Formik, Field, Form, ErrorMessage } from 'formik';
+import { validateContactForm } from '../utils/validateContactForm';
 
 const ContactForm = () => {
   const handleSubmit = (values, { resetForm }) => {
     console.log('form values:', values);
-    console.log('in JSON format:', JSON.stringify(values));
+    console.log( 'in JSON format:', JSON.stringify( values ) );
   };
+
   return (
     <Formik
       initialValues={{
@@ -19,8 +21,7 @@ const ContactForm = () => {
         feedback: ''
       }}
       onSubmit={handleSubmit}
-    >
-
+      validate={validateContactForm}>
       <Form>
         <FormGroup row>
           <Label htmlFor="firstName" md="2">
@@ -33,12 +34,16 @@ const ContactForm = () => {
               id="firstName"
               name="firstName"
             />
+            <ErrorMessage name="firstName">
+              {(msg) => <p className="text-danger">{msg}</p>}
+            </ErrorMessage>
           </Col>
         </FormGroup>
         <FormGroup row>
           <Label htmlFor="lastName" md="2">
             Last Name
           </Label>
+
           <Col md="10">
             <Field
               className="form-control"
@@ -46,6 +51,9 @@ const ContactForm = () => {
               id="lastName"
               name="lastName"
             />
+            <ErrorMessage name="lastName">
+              {(msg) => <p className="text-danger">{msg}</p>}
+            </ErrorMessage>
           </Col>
         </FormGroup>
         <FormGroup row>
@@ -56,9 +64,12 @@ const ContactForm = () => {
             <Field
               className="form-control"
               type="text"
-              id="phone"
-              name="phone"
+              id="phoneNum"
+              name="phoneNum"
             />
+            <ErrorMessage name="phoneNum">
+              {(msg) => <p className="text-danger">{msg}</p>}
+            </ErrorMessage>
           </Col>
         </FormGroup>
         <FormGroup row>
@@ -72,12 +83,20 @@ const ContactForm = () => {
               id="email"
               name="email"
             />
+            <ErrorMessage name="email">
+              {(msg) => <p className="text-danger">{msg}</p>}
+            </ErrorMessage>
           </Col>
         </FormGroup>
         <FormGroup row>
           <Label check md={{ size: 4, offset: 2 }}>
-            <Field type="checkbox" id="agree" name="agree" className="form-check-input"/>
-            { ' '}May we contact you?
+            <Field
+              type="checkbox"
+              id="agree"
+              name="agree"
+              className="form-check-input"
+            />{' '}
+            May we contact you?
           </Label>
           <Col md="4">
             <Field name="contactType" type="radio" as="select">
