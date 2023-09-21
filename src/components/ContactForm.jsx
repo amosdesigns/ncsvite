@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/jsx-no-undef */
 import { Button, Label, Col, FormGroup } from 'reactstrap'
 import { Formik, Field, Form, ErrorMessage } from 'formik';
@@ -21,7 +22,9 @@ const ContactForm = () => {
         feedback: ''
       }}
       onSubmit={handleSubmit}
-      validate={validateContactForm}>
+      validate={validateContactForm}
+    >
+      
       <Form>
         <FormGroup row>
           <Label htmlFor="firstName" md="2">
