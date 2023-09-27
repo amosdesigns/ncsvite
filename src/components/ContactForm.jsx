@@ -1,13 +1,13 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/jsx-no-undef */
-import { Button, Label, Col, FormGroup } from 'reactstrap'
+import { Button, Label, Col, FormGroup } from 'reactstrap';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
 import { validateContactForm } from '../utils/validateContactForm';
 
 const ContactForm = () => {
   const handleSubmit = (values, { resetForm }) => {
     console.log('form values:', values);
-    console.log( 'in JSON format:', JSON.stringify( values ) );
+    console.log('in JSON format:', JSON.stringify(values));
   };
 
   return (
@@ -22,9 +22,7 @@ const ContactForm = () => {
         feedback: ''
       }}
       onSubmit={handleSubmit}
-      validate={validateContactForm}
-    >
-      
+      validate={validateContactForm}>
       <Form>
         <FormGroup row>
           <Label htmlFor="firstName" md="2">
@@ -46,7 +44,6 @@ const ContactForm = () => {
           <Label htmlFor="lastName" md="2">
             Last Name
           </Label>
-
           <Col md="10">
             <Field
               className="form-control"
@@ -133,6 +130,6 @@ const ContactForm = () => {
       </Form>
     </Formik>
   );
-}
+};
 
-export default ContactForm
+export default ContactForm;
