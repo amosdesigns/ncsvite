@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { fetchCampsites } from './features/campsites/campsitesSlice';
+import { fetchPartners } from './features/partners/partnersSlice';
 import { Routes, Route } from 'react-router-dom';
 import ContactPage from './pages/ContactPage';
 import AboutPage from './pages/AboutPage';
@@ -15,7 +16,8 @@ import './App.css';
 function App() {
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(fetchCampsites());
+    dispatch( fetchCampsites() );
+     dispatch(fetchPartners());
   }, [dispatch] );
   
   return (
