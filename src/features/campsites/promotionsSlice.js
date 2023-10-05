@@ -38,7 +38,7 @@ const promotionsSlice = createSlice({
   }
 });
 
-export const partnersReducer = promotionsSlice.reducer;
+export const promotionsReducer = promotionsSlice.reducer;
 
 export const selectFeaturedPromotion = (state) => {
   return state.partners.find((promotion) => promotion.featured);
