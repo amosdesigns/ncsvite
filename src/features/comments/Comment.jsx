@@ -2,7 +2,6 @@
 import { formatDate } from '../../utils/formatDate';
 
 const Comment = ( { comment } ) => {
-  console.log('Comment comment: ', comment);
   const { text: commentText, rating, author, date } = comment;
   return (
     <p>
