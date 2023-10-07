@@ -13,6 +13,7 @@ export const fetchPromotions = createAsyncThunk(
     return data;
   }
 );
+
 const initialState = {
   promotionsArray: [],
   isLoading: true,

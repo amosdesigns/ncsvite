@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux';
 import { fetchCampsites } from './features/campsites/campsitesSlice';
 import { fetchPartners } from './features/partners/partnersSlice';
 import { fetchPromotions } from './features/promotions/promotionsSlice';
+import { fetchComments } from './features/comments/commentsSlice';
 import { Routes, Route } from 'react-router-dom';
 import ContactPage from './pages/ContactPage';
 import AboutPage from './pages/AboutPage';
@@ -16,7 +17,8 @@ import './App.css';
 
 function App() {
   const dispatch = useDispatch();
-  useEffect(() => {
+  useEffect( () => {
+    dispatch(fetchComments());
     dispatch(fetchCampsites());
     dispatch(fetchPromotions());
     dispatch(fetchPartners());
