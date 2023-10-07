@@ -2,7 +2,7 @@
 import { Card, CardImg, CardImgOverlay, CardTitle } from 'reactstrap';
 
 const CampsiteCard = ({ campsite }) => {
-  console.log(campsite);
+
   const [image, name] = campsite;
   return (
     <Card>
